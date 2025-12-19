@@ -13,3 +13,5 @@
 /FinanceManager.Domain/obj
 /FinanceManager.Infrastructure/bin/Debug/net10.0
 /FinanceManager.Infrastructure/obj
+/FinanceManager.Api/appsettings.Development.json
+/FinanceManager.Api/appsettings.json
