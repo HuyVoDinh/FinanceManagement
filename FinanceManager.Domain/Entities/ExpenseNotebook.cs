@@ -11,6 +11,8 @@ namespace FinanceManager.Domain.Entities
         private double _ratio;
         private decimal _price;
 
+        private int _accountID;
+
         public ExpenseNoteBook(string name, double ratio, decimal price) { 
             this._name = name;
             this._ratio = ratio;

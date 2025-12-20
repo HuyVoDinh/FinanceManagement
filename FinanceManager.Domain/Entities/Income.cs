@@ -11,6 +11,8 @@ namespace FinanceManager.Domain.Entities
         private decimal _income;
         private decimal _moneyReduce;
 
+        private int _accountID;
+
         public Income(string name) { 
             this._name = name;
             this._income = 0;

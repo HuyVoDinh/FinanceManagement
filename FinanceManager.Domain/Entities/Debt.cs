@@ -22,6 +22,8 @@ namespace FinanceManager.Domain.Entities
         private DateTime _dueDate;
         private List<DebtDetail> debtDetails;
 
+        private int _accountID;
+
         public Debt(string name, decimal price, decimal paid, DeptType type, string description, DateTime createAt, DateTime updatedAt, DateTime dueDate, List<DebtDetail> debtDetails)
         {
             _name = name;
