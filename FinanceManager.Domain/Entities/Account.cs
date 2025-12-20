@@ -11,11 +11,11 @@ namespace FinanceManager.Domain.Entities
     }
     internal class Account
     {
-        private string _id;
-        private string _username;
-        private string _password;
-        private AccountStatus _status;
-        private DateTime _createAt;
+        private string _id { get;  }
+        private string _username { get; set; }
+        private string _password { get; set; }
+        private AccountStatus _status { get; set; }
+        private DateTime _createAt { get; set; }
 
         public Account(string id, string username, string password)
         {

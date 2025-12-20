@@ -6,11 +6,18 @@ namespace FinanceManager.Domain.Entities
 {
     internal class WalletDetail
     {
-        private int _walletDetailID;
-        private int _walletID;
-        public string name { get; set; }
-        public decimal fund { get; set; }
-        public decimal current { get; set; }
-        public DateTime updatedDate { get; set; }
+        private int _walletDetailID { get; }
+        private int _walletID { get;}
+        private string _name { get; set; }
+        private decimal _fund { get; set; }
+        private decimal _current { get; set; }
+        private DateTime _updatedDate { get; set; }
+
+        public WalletDetail(string name, decimal fund, decimal current) { 
+            this._name = name;
+            this._fund = fund;
+            this._current = current;
+            this._updatedDate = DateTime.Now;
+        }
     }
 }

@@ -11,16 +11,16 @@ namespace FinanceManager.Domain.Entities
 
     internal class Debt
     {
-        private int _debtID;
-        private string _name;
-        private decimal _price;
-        private decimal _paid;
-        private DeptType _type;
-        private string _description;
-        private DateTime _createAt;
-        private DateTime _updatedAt;
-        private DateTime _dueDate;
-        private List<DebtDetail> debtDetails;
+        private int _debtID { get; }
+        private string _name { get; set; }
+        private decimal _price { get; set; }
+        private decimal _paid { get; set; }
+        private DeptType _type { get; set; }
+        private string _description { get; set; }
+        private DateTime _createAt { get; set; }
+        private DateTime _updatedAt { get; set; }
+        private DateTime _dueDate { get; set; }
+        private List<DebtDetail> debtDetails { get; set; }
 
         private int _accountID;
 

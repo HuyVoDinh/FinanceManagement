@@ -6,10 +6,10 @@ namespace FinanceManager.Domain.Entities
 {
     internal class ExpenseNoteBook
     {
-        private string _id;
-        private string _name;
-        private double _ratio;
-        private decimal _price;
+        private string _id { get; }
+        private string _name { get; set; }
+        private double _ratio { get; set; }
+        private decimal _price { get; set; }
 
         private int _accountID;
 

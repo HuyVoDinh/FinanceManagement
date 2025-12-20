@@ -6,9 +6,9 @@ namespace FinanceManager.Domain.Entities
 {
     internal class Wallet
     {
-        private int _walletID {  get; set; }
-        private List<WalletDetail> walletDetails;
-        private int _accountID;
+        private int _walletID {  get; }
+        private List<WalletDetail> walletDetails { get; set; }
+        private int _accountID { get; set; }
 
         public Wallet(List<WalletDetail> walletDetails) {
             this.walletDetails = walletDetails;

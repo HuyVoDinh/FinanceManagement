@@ -6,10 +6,10 @@ namespace FinanceManager.Domain.Entities
 {
     internal class Income
     {
-        private int _id;
-        private string _name;
-        private decimal _income;
-        private decimal _moneyReduce;
+        private int _id { get; }
+        private string _name { get; set; }
+        private decimal _income { get; set; }
+        private decimal _moneyReduce { get; set; }
 
         private int _accountID;
 
