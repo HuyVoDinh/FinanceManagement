@@ -16,3 +16,4 @@
 /FinanceManager.Api/appsettings.Development.json
 /FinanceManager.Api/appsettings.json
 /.vs
+/FinanceManagement.Domain.Security/obj
