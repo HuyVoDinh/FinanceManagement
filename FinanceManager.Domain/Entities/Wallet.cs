@@ -36,5 +36,34 @@ namespace FinanceManager.Domain.Entities
                 Console.WriteLine($"Wallet Detail ID: {wd._walletDetailID}, Name: {wd._name}, Fund: {wd._fund}, Current: {wd._current}");
             }
         }
+
+        public Wallet(string name) { 
+            this._name = name;
+            this.walletDetails = new List<WalletDetail>();
+        }
+
+        public Wallet(string name, List<WalletDetail> walletDetails) { 
+            this._name = name;
+            this.walletDetails = walletDetails;
+        }
+
+        public void Rename(string newName) {
+            this._name = newName;
+        }
+
+        public void Add(WalletDetail walletDetail) { 
+            this.walletDetails.Add(walletDetail);
+            //TODO: Add to db
+        }
+
+        public void Remove(int walledDetailID)
+        {
+            foreach (WalletDetail walletDetail in this.walletDetails) {
+                if (walletDetail._walletDetailID == walledDetailID)
+                {
+                    this.walletDetails.Remove(walletDetail); break;
+                }
+            }
+        }
     }
 }
