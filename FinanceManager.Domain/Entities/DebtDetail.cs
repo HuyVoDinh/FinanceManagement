@@ -8,7 +8,7 @@ namespace FinanceManager.Domain.Entities
         PAID,
         UNPAID
     }
-    internal class DebtDetail
+    public class DebtDetail
     {
         private int _id { get; }
         private int _debtID { get; set; }
