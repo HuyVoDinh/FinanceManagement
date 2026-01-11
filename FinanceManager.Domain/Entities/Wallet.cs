@@ -26,5 +26,15 @@ namespace FinanceManager.Domain.Entities
         public void RemoveWalletDetail(int walletDetailID) { 
             this._walletDetails.RemoveAll(wd => wd._walletDetailID == walletDetailID);
         }
+
+        public List<WalletDetail> GetWalletDetails() { 
+            return this._walletDetails;
+        }
+
+        public void showWalletDetails() { 
+            foreach(var wd in this._walletDetails) { 
+                Console.WriteLine($"Wallet Detail ID: {wd._walletDetailID}, Name: {wd._name}, Fund: {wd._fund}, Current: {wd._current}");
+            }
+        }
     }
 }
